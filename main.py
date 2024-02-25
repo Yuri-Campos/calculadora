@@ -11,20 +11,32 @@ def inserir_numeros():
 
 def soma():
     numeros = inserir_numeros()
-    soma = 0
-    for i in numeros:
+    soma = numeros[0]
+    for i in numeros[1:]:
         soma += i
     print(f"\nResultado: {soma}")
         
 def subtrai():
     numeros = inserir_numeros()
-    pass
+    sub = numeros[0]
+    for i in numeros[1:]:
+        sub -= i
+    print(f"\nResultado: {sub}")
+        
 def multiplica():
     numeros = inserir_numeros()
-    pass
+    multiplica = numeros[0]
+    for i in numeros[1:]:
+        multiplica *= i
+    print(f"\nResultado: {multiplica}")
+        
 def divide():
     numeros = inserir_numeros()
-    pass
+    divide = numeros[0]
+    for i in numeros[1:]:
+        divide /= i
+    print(f"\nResultado: {divide}")
+        
 
 
 
